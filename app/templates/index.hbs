@@ -1,0 +1,9 @@
+<header>
+  <h2 id="title">Welcome to Bloggin</h2>
+
+  {{#link-to "create-post" class="new-btn"}}New Post{{/link-to}}
+</header>
+
+{{#each model as |post|}}
+  {{#blog-post post=post}}{{/blog-post}}
+{{/each}}

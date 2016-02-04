@@ -1,0 +1,7 @@
+<header>
+  <h2 id="title">Create New Post</h2>
+
+  {{#link-to "index" class="new-btn"}}Back to Posts{{/link-to}}
+</header>
+
+{{#new-post newPost=model createPost="createPost"}}{{/new-post}}
